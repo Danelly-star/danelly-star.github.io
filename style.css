@@ -1,15 +1,27 @@
 /* Add your styling here */
 body {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #33415E;
     margin: 0;
     padding: 0;
 }
 
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+        to {
+            opacity: 1;
+        }
+
+}
 
 
 header {
-    background-color: #e79cb9;
+    background-color: #7a90c9;
     color: white;
     padding: 2rem;
     text-align: center;
