@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Visualizations</h1>
+     <header>
+       <nav>
+            <div id ="navbar">
+                <ul>
+                    
+                    <li><a href="index.html">Homepage</a></li>
+                    
+                </ul>
+            </div>
+       </nav>
     </header>
 
-    <main>
-        <!-- Add your SVG visualizations here -->
-        <svg id="vis" width="800px" height="500px"></svg>
+    <main class = "wrap">
+        <canvas id="pie" aria-label="Pie chart of four values" role="img"></canvas>
+         <canvas id="scatter" aria-label="Minimal scatter plot" role="img"></canvas>
     </main>
 
     <script src="vis.js"></script>

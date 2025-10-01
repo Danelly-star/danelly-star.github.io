@@ -1,7 +1,10 @@
 
 
+/* -----------------------------
+    Simple Star Twinkle Animation using help from SVG.js, 
+    https://developer.mozilla.org/en-US/ and Youtube Tutorials
+-------------------------------- */
 
-// main.js (Simple Star Twinkle Animation using help from SVG.js)
 
 // set canvas size
 const width = window.innerWidth;
@@ -21,7 +24,7 @@ setInterval(() => {
   }
 }, 100);
 
-// create star
+// create stars
 const createStar = () => {
   const x = Math.random() * width;
   const y = Math.random() * height;
