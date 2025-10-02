@@ -382,16 +382,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*--- EXPERINCES AND PROJECTS---*/
 
 #experience{
@@ -426,16 +416,16 @@ max-width: min(95rem, 92vw);
   gap: 2.25rem;
 }
 
-/* Cards */
+
 .xp-card {
   background-color: #1e2a47;
-  border-radius: 14px;
+  border-radius: 2rem;
   overflow: hidden;
   box-shadow:0rem -0.2rem #02222b, 0rem 0.2rem #000000;  
   flex-direction: column;
 }
 
-/* Image container */
+
 .xp-media {
   position: relative;
   aspect-ratio: 16/9;
@@ -449,7 +439,7 @@ max-width: min(95rem, 92vw);
 
 }
 
-/* Text */
+
 .xp-body {
   padding: 1rem 1rem 1.1rem;
 }
@@ -469,6 +459,102 @@ max-width: min(95rem, 92vw);
   color: #d3dbf0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- FOOTER SECTION---*/
+
+
+.footer-grid{
+  margin-top:20rem;
+  padding-bottom:11rem;
+  width: 100%;
+  text-align: center;
+  background-image: url("assets/footergraphicdesign.jpg");
+
+
+}
+
+footer h1{
+  font-size:1.5rem;
+  color: #89e7d8;
+ 
+}
+
+
+footer h3{
+  font-size:1.2rem;
+  color: #d3dbf0;
+ font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+ margin-bottom: 3rem;
+}
+
+.starlogofooter{
+  margin-top:5rem;
+  margin-bottom: 5rem;
+
+}
+
+
+.footersocials{
+  margin-right:-1rem;
+  margin-top:-4rem;
+}
+
+.socialmediabuttons{
+  opacity:0;
+}
+
+.igbutton{
+  margin-top:-8.3rem;
+  margin-left:-4rem;
+}
+
+
+.facebookbutton{
+ margin-left:4.3rem;
+ margin-top:-1.5rem;  
+}
+
+
+.ytbutton{
+   margin-left:-3.7rem;
+   margin-top:2.8rem;  
+  }
+
+
+
+  .twitterbutton{
+     margin-left:4.5rem;
+    margin-top:-1.5rem;
+    }
+   
+
+
+
+
+
+
 
 
 
