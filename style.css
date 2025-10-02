@@ -370,3 +370,106 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- EXPERINCES AND PROJECTS---*/
+
+#experience{
+  margin: clamp(0.25rem, 4vw, 3rem) auto;
+  padding: clamp(3rem, 3vw, 3.5rem);
+  min-height: 30vh;
+  background-image: linear-gradient(rgb(211 219 240), rgb(122 144 201));
+  border-radius: 3rem;
+  box-shadow: 0 0.25rem 0.5rem #1e2a47, 0 0.125rem 1rem #89e7d8;
+  
+}
+
+.xp {
+max-width: min(95rem, 92vw);
+  margin-inline: auto;
+}
+
+.xp > h2 {
+  font-weight: 800;
+  color: #33415e;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0 3rem clamp(1.75rem, 2vw, 1.25rem) 2rem;
+  text-align: center;
+ 
+}
+
+/* Grid layout */
+.xp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2.25rem;
+}
+
+/* Cards */
+.xp-card {
+  background-color: #1e2a47;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow:0rem -0.2rem #02222b, 0rem 0.2rem #000000;  
+  flex-direction: column;
+}
+
+/* Image container */
+.xp-media {
+  position: relative;
+  aspect-ratio: 16/9;
+   background-color: #ce47f0;
+}
+
+.xp-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* Text */
+.xp-body {
+  padding: 1rem 1rem 1.1rem;
+}
+
+.xp-body h3 {
+ 
+  margin: 0 0 .4rem;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #d3dbf0;
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  margin: 0 0 0.5rem 0;
+}
+
+.xp-body p {
+  margin: 0;
+  line-height: 1.45;
+  color: #d3dbf0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+
+
