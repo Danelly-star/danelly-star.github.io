@@ -276,7 +276,6 @@ body {
   margin-inline: auto;
 }
 
-/* --- EDUCATION & SKILLS SECTION --- */
 #education-skills{
   margin: clamp(10.25rem, 4vw, 3rem) auto;
  padding: clamp(3rem, 3vw, 3.5rem);
@@ -344,7 +343,8 @@ body {
 
 
 
-/*--- VISUALIZATION #1 and #2 (PIE CHART AND SCATTERPLOT:---*/
+/*--- VISUALIZATION #1 and #2 (PIE CHART AND SCATTERPLOT):---*/
+/*Check vis.js for full code*/
 
 
 .wrap {
@@ -355,7 +355,7 @@ body {
 #scatter {
   width: 100%;
   display: block;
-  margin-top: 10rem;            /* space from the pie */
+  margin-top: 10rem;        
   filter: drop-shadow(0 2px 6px rgba(0,0,0,.12));
   background: #7A90C9;          
   border-radius: 1rem;
