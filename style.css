@@ -178,6 +178,7 @@ body {
   transition: opacity .3s ease-in-out;
   border-radius: 3rem;
   opacity: 0;
+  
 }
 
 @keyframes glowing {
@@ -439,25 +440,30 @@ max-width: min(95rem, 92vw);
 
 }
 
-
 .xp-body {
   padding: 1rem 1rem 1.1rem;
 }
 
 .xp-body h3 {
- 
-  margin: 0 0 .4rem;
+  padding: 1rem;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  color: #d3dbf0;
+  color: aquamarine;
   font-size: clamp(1rem, 1.6vw, 1.5rem);
   margin: 0 0 0.5rem 0;
 }
 
 .xp-body p {
-  margin: 0;
+  padding: 1rem;
   line-height: 1.45;
   color: #d3dbf0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.directbtn  {
+ font-size: 1rem;
+ color:rgb(127, 214, 255);
+ text-decoration: none;
 }
 
 
@@ -487,12 +493,10 @@ max-width: min(95rem, 92vw);
 
 .footer-grid{
   margin-top:20rem;
-  padding-bottom:11rem;
+  padding-bottom:10rem;
   width: 100%;
   text-align: center;
   background-image: url("assets/footergraphicdesign.jpg");
-
-
 }
 
 footer h1{
@@ -531,7 +535,7 @@ footer h3{
 }
 
 
-.facebookbutton{
+.ghbutton{
  margin-left:4.3rem;
  margin-top:-1.5rem;  
 }
@@ -544,10 +548,10 @@ footer h3{
 
 
 
-  .twitterbutton{
-     margin-left:4.5rem;
+.linkedinbutton{
+    margin-left:4.5rem;
     margin-top:-1.5rem;
-    }
+ }
    
 
 
