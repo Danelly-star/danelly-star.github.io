@@ -21,3 +21,5 @@ var yourVlSpec = {
   },
 };
 vegaEmbed("#view", yourVlSpec);
+
+
