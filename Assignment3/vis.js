@@ -102,3 +102,62 @@ async function render(viewID, spec) {
   const result = await vegaEmbed(viewID, spec, { actions: false });
   result.view.run();
 }
+
+
+
+
+// New chart in #view2: Sum of Global Sales by Genre (using the *wide* CSV)
+var genreTotalsWide = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  description: "Sum of Global Sales by Genre (wide CSV).",
+  data: {
+    url: "./dataset/videogames_wide.csv",
+    format: { type: "csv" }
+  },
+  transform: [
+    // Aggregate global sales by genre
+    { aggregate: [{ op: "sum", field: "Global_Sales", as: "TotalSales" }], groupby: ["Genre"] }
+  ],
+  mark: { type: "bar", cornerRadiusTopLeft: 2, cornerRadiusTopRight: 2 },
+  encoding: {
+    y: { field: "Genre", type: "nominal",
+         sort: "-x", title: "Genre" },       // sort by bar length (TotalSales)
+    x: { field: "TotalSales", type: "quantitative",
+         title: "Sum of Global Sales (millions)" },
+    tooltip: [
+      { field: "Genre", type: "nominal" },
+      { field: "TotalSales", type: "quantitative", title: "Global Sales (M)", format: ".1f" }
+    ]
+  },
+  width: "container",
+  height: 420,
+  title: "Global Sales by Genre",
+  config: {
+    // optional: match your white-text theme
+    title: { color: "white" },
+    axis: { labelColor: "white", titleColor: "white", grid: false, domain: false, tickSize: 0 },
+    legend: { labelColor: "white", titleColor: "white" },
+    view: { stroke: "transparent" },
+    background: "transparent"
+  }
+};
+
+// Render it into the second slot on your page
+vegaEmbed("#view2", genreTotalsWide, { actions: false });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
