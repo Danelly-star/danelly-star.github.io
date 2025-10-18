@@ -1,6 +1,11 @@
 
 
-const spec = {
+
+
+//--------------------------   VISUALIZATION 1: GLOBAL SALES BY GENRE AND PLATFORM
+
+
+var viz1spec = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   data: { url: "./dataset/videogames_wide.csv", format: { type: "csv" } },
   transform: [
@@ -46,7 +51,7 @@ const spec = {
   title: "Global Sales by Genre & Platform (Top 5 Platforms)"
 };
 
-vegaEmbed("#view", spec, { actions: false });
+vegaEmbed("#view", viz1spec, { actions: false });
 
 
 
@@ -71,9 +76,8 @@ vegaEmbed("#view", spec, { actions: false });
 
 
 
+//--------------------------  VISULIZATION 2: Multi-series Line (simple, NO D3)
 
-// Visualization 2 — Multi-series Line (simple, NO D3)
-// Shows Global Sales over time for one Genre, colored by Platform.
 
 var viz2Spec = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
@@ -100,7 +104,7 @@ var viz2Spec = {
     ]
   },
 
-  title: { text: "Sales Over Time by Platform — Genre: Action", anchor: "start", color: "white" },
+  title: { text: "Sales Over Time by Platform ~ Genre: Action", anchor: "start", color: "white" },
   width: "container",
   height: 320,
   config: {
@@ -113,7 +117,7 @@ var viz2Spec = {
 
 
 
-var viz3Spec = {
+var viz2_Spec = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Sales over time by platform for a single genre.",
   data: { url: "./dataset/videogames_wide.csv", format: { type: "csv" } },
@@ -138,7 +142,7 @@ var viz3Spec = {
     ]
   },
 
-  title: { text: "Sales Over Time by Platform — Genre: Puzzle", anchor: "start", color: "white" },
+  title: { text: "Sales Over Time by Platform ~ Genre: Puzzle", anchor: "start", color: "white" },
   width: "container",
   height: 360,
   config: {
@@ -151,7 +155,7 @@ var viz3Spec = {
 
 
 vegaEmbed("#view2", viz2Spec, { actions: false });
-vegaEmbed("#secondview2", viz3Spec, { actions: false });
+vegaEmbed("#secondview2", viz2_Spec, { actions: false });
 
 
 
@@ -186,13 +190,12 @@ vegaEmbed("#secondview2", viz3Spec, { actions: false });
 
 
 
-// ==== Visualization 3: Regional Sales vs Platform (Heatmap) ====
-// Uses videogames_long.csv with region columns.
-// Keeps Top 10 platforms by total (NA+EU+JP+Other) sales.
+// --------------------- Visualization 3: Regional Sales vs Platform (Heatmap) 
 
-const spec3 = {
+
+var viz3spec = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-  title: "Regional Sales by Platform (Top 10 Platforms)",
+  title: "Regional Sales by Platform",
   data: {
     url: "./dataset/videogames_wide.csv",
     format: { type: "csv", parse: {
@@ -239,12 +242,6 @@ const spec3 = {
     ]
   },
 
-  // Optional: draw numbers inside each cell (uncomment layer below)
-  // layer: [
-  //   { mark: { type: "rect" }, encoding: { ... as above ... } },
-  //   { mark: { type: "text", dy: 0 }, encoding: { text: { field: "Sales", type: "quantitative", format: ".1f" }, color: { value: "white" } } }
-  // ],
-
   config: {
     background: "transparent",
     view: { stroke: null },
@@ -254,7 +251,7 @@ const spec3 = {
   }
 };
 
-vegaEmbed("#view3", spec3, { actions: false });
+vegaEmbed("#view3", viz3spec, { actions: false });
 
 
 
